@@ -1,0 +1,95 @@
+# Python files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+*.pyd
+*.whl
+*.pyo
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.wheel
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest cache
+.pytest_cache/
+.tox/
+.cache/
+
+# Logs
+*.log
+*.out
+*.err
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database files (if any)
+*.sqlite3
+*.db
+
+# Docker-related files
+*.env              # Important: Ignore .env files with sensitive data
+docker-compose.override.yml
+.env.*
+
+# Static files
+/static/
+media/
+
+# Compiled library files
+*.o
+*.a
+*.so
+*.dll
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Node.js
+node_modules/
+
+# Python packaging
+*.pypirc
+
+# Temporary files and backups
+*~
+# Backup files
+*.bak
+*.tmp
+*.old
+
+# Git files
+.gitignore
