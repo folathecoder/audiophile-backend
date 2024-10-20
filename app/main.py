@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from core.logger import setup_logging
-from db.mongodb import client
-from api.v1.endpoints.auth import auth_router
-from api.v1.endpoints.product import product_router
+from app.core.logger import setup_logging
+from app.db.mongodb import client
+from app.api.v1.endpoints.auth import auth_router
+from app.api.v1.endpoints.product import product_router
 import logging
 from contextlib import asynccontextmanager
 
@@ -39,4 +39,4 @@ app = FastAPI(
 )
 
 app.include_router(auth_router, prefix=f"{base_url}/auth", tags=["Auth"])
-app.include_router(product_router, prefix=f"{base_url}/product", tags=["Product"])
+app.include_router(product_router, prefix=f"{base_url}/products", tags=["Product"])
