@@ -1,4 +1,4 @@
-def product_data(product):
+def product_data_schema(product):
     return {
         "id": str(product["_id"]),
         "name": product["name"],
@@ -9,8 +9,9 @@ def product_data(product):
         "category": product["category"],
         "image_url": product["image_url"],
         "created_at": product["created_at"],
-        "updated_at": product["updated_at"]
+        "updated_at": product["updated_at"],
     }
 
-def all_product_data(products):
-    return [product_data(product) for product in products]
+
+def all_product_data_schema(products):
+    return [product_data_schema(product) for product in products]
